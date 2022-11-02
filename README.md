@@ -1,3 +1,13 @@
+Utilized the very popular and in-demand React library to create an image gallery app. With the help of this powerful "MVC" (Model, View, Controller) library, the app was built in the style of modern single-page applications to keep it fast, modular, and in sync with current web development trends.
+
+Working with React, JSX was used to write markup-like syntax directly in the JS files and state was managed in a container component that was passed data down to reusable stateless components. Additionally, React supportive tools like the Create React App and React Router modules were put into practice.
+
+The powerful Create React App tool, was used to set up the project.
+
+Technologies & Functionality:
+
+Used JavaScript and JSX to build out the gallery components in a modular fashion. Used React Router to set up routes for three default topic pages and a search page. Used the Fetch API or a tool like Axios to fetch data from the Flickr API and use it to display images in your app. Added logic to handle the search and various requirements of the project. Added to the supplied CSS to personalize the project.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
