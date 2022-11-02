@@ -11,14 +11,12 @@ const PhotoContainer = (props) => {
             setData(data);
             console.log(data)
         })
-    }, [])
+    }, [props])
     return (
         <div>
             {data?.photos?.photo?.map((photo) => {
-        return <div>
-                <Photos title={photo.title} id={photo.id} key={photo.id} server={photo.server} secret={photo.secret} />
-                     {/* <img src="https://www.flickr.com/photos/114973983@N05/52470508458/" alt="classic car"/> */}
-                    </div>
+        return <Photos title={photo.title} id={photo.id} key={photo.id} server={photo.server} secret={photo.secret} />
+                
             })}    
 
         </div>
