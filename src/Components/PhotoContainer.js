@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Photos from './Photos';
 
 const PhotoContainer = (props) => {
+    console.log(props)
     const [data, setData] = useState(null);
 
     useEffect(() => {

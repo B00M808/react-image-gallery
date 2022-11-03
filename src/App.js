@@ -7,6 +7,7 @@ import NotFound from './Components/NotFound';
 import SearchBar from './Components/SearchBar';
 
 function App() {
+  /*const [searchTerm, setSearchTerm] = useState('')*/
   return (
     <BrowserRouter>
     <div className="container">
@@ -18,6 +19,8 @@ function App() {
             <Route path="/bikes" element={<PhotoContainer tag={"bikes"} />} />
             <Route path="/searchbar" element={<SearchBar placeholder="Happy Exploring..."/>} />
             <Route path="*" element={<NotFound />} />
+            {/* <Route path=":userId" element={<"Cars" />} /> */}
+
         </Routes>
     </div>   
 </BrowserRouter> 
