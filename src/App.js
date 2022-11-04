@@ -5,29 +5,14 @@ import PhotoContainer from './Components/PhotoContainer';
 import Header from './Components/Header';
 import NotFound from './Components/NotFound';
 import SearchBar from './Components/SearchBar';
-import apiKey from './config'
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState();
 
   useEffect(() => {
-    const getFlickrData = async () => {
-      try {
-        await fetchImages(searchTerm)
-      } catch(error) {
-        console.error("Error fetching data: ", error)
-      } 
-    }
-    getFlickrData()
-  },);
-
-  const fetchImages = (searchTerm) => {
-    fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${searchTerm}&per_page=16&sort=relevance&content_type=1&format=json&nojsoncallback=1`)
-      .then((resp) => resp.json())
-      .then((data) => {
-          return data.photos.photo
-      })
-    }
+    setSearchTerm('cars');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   return (
     <BrowserRouter>
@@ -51,9 +36,3 @@ const App = () => {
 }
 
 export default App;
-
-
-
-
-
-

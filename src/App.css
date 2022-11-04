@@ -21,7 +21,8 @@ header {
   text-decoration: none;
   color: #fff;
   background-color: #2fac68;
-  padding: 5px;
+  border-radius: 0.35em;
+  padding: 10px;
 }
 
 .searchInputs { 
@@ -54,6 +55,32 @@ header .searchIcon{
   margin-bottom: 15px;
 }
 
+.search-form {
+  max-width: 460px;
+  display: flex;
+  margin: 0 auto 32px;
+}
+
+.search-form button {
+  outline: none;
+  background-color: #2fac68;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 0 0.35em 0.35em 0;
+  cursor: pointer;
+}
+
+input {
+  font-size: 1em;
+  width: 100%;
+  background-color: #edeff0;
+  padding: 10px 15px;
+  border: 3px solid #2fac68;
+  border-right: none;
+  border-radius: 0.35em 0 0 0.35em;
+  outline: none;
+}
+
 @media only screen and (max-width: 767px)  {
   body {
     padding-top: 2em;
@@ -71,14 +98,18 @@ header .searchIcon{
     max-width: 960px;
     margin: auto;
   }
-  .main-nav ul {
+  .main-nav {
     display: flex;
     justify-content: center;
+    padding-left: 0;
   }
   
   .main-nav li {
-    margin: 10px;
-    width: 100px;
+    width: initial;
+  }
+
+  .main-nav li a {
+    margin: 0;
   }
 } 
 
