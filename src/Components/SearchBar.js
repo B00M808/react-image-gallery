@@ -10,7 +10,7 @@ function SearchBar({ setSearchTerm }) {
   
     useEffect(() => {
       setSearchTerm(decodeURI(pathname.replace('/search/', '')))
-    }, [])
+    }, )
   
     const handleSubmit = e => {
       e.preventDefault()

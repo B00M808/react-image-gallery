@@ -19,7 +19,7 @@ const App = () => {
       } 
     }
     getFlickrData()
-  }, []);
+  },);
 
   const fetchImages = (searchTerm) => {
     fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${searchTerm}&per_page=16&sort=relevance&content_type=1&format=json&nojsoncallback=1`)
